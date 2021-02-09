@@ -1,1 +1,1 @@
-This repository contains a techncal approach for building one access point to dispersed data sources.
+This repository contains a techncal approach (Good Practice) for building one access point to dispersed data sources.
