@@ -10,89 +10,49 @@ Version 1.0.20
 
 # Table of contents
 
-**[Normative reference 3](#_Toc59466269)**
+**[Normative reference](#_Toc59466269)**
 
-**[Terms 4](#_Toc59466270)**
+**[Terms4](#_Toc59466270)**
 
-**[Introduction 5](#_Toc59466271)**
+**[Introduction](#_Toc59466271)**
 
-**[Standards 7](#_Toc59466272)**
+**[Standards](#_Toc59466272)**
 
-[Supported operations 7](#_Toc59466273)
+[Supported operations](#_Toc59466273)
 
-_[GetCapabilities 7](#_Toc59466274)_
+_[GetCapabilities](#_Toc59466274)_
 
-_[GetMap 7](#_Toc59466275)_
+_[GetMap](#_Toc59466275)_
 
-_[GetFeatueInfo 9](#_Toc59466276)_
+_[GetFeatueInfo](#_Toc59466276)_
 
 **[Standardisation of local services 10](#_Toc59466277)**
 
-_[CRSs 10](#_Toc59466278)_
+_[CRSs](#_Toc59466278)_
 
-_[Names of layer 10](#_Toc59466279)_
+_[Names of layer](#_Toc59466279)_
 
-_[Portrayal of layers 10](#_Toc59466280)_
+_[Portrayal of layers](#_Toc59466280)_
 
-_[Structure of GetFeatureInfo responses 10](#_Toc59466281)_
+_[Structure of GetFeatureInfo responses](#_Toc59466281)_
 
-**[Examples of implementations 11](#_Toc59466282)**
+**[Examples of implementations](#_Toc59466282)**
 
-[Technical solution 11](#_Toc59466283)
+[Technical solution](#_Toc59466283)
 
-**[Final words 12](#_Toc59466284)**
+**[Final words](#_Toc59466284)**
 
-[Błąd! Nieprawidłowy odsyłacz typu hiperłącze. **Normative reference 3**](#_Toc57650729)
-
-[Błąd! Nieprawidłowy odsyłacz typu hiperłącze. **Terms 4**](#_Toc57650730)
-
-[Błąd! Nieprawidłowy odsyłacz typu hiperłącze. **Introduction 5**](#_Toc57650731)
-
-[Błąd! Nieprawidłowy odsyłacz typu hiperłącze. **Standards 7**](#_Toc57650732)
-
-[**Błąd! Nieprawidłowy odsyłacz typu hiperłącze.** Supported operations 7](#_Toc57650733)
-
-_[**Błąd! Nieprawidłowy odsyłacz typu hiperłącze.** GetCapabilities 7](#_Toc57650734)_
-
-_[**Błąd! Nieprawidłowy odsyłacz typu hiperłącze.** GetMap 7](#_Toc57650735)_
-
-_[**Błąd! Nieprawidłowy odsyłacz typu hiperłącze.** GetFeatueInfo 9](#_Toc57650736)_
-
-[Błąd! Nieprawidłowy odsyłacz typu hiperłącze. **Standardisation of local services 10**](#_Toc57650737)
-
-_[**Błąd! Nieprawidłowy odsyłacz typu hiperłącze.** CRSs 10](#_Toc57650738)_
-
-_[**Błąd! Nieprawidłowy odsyłacz typu hiperłącze.** Names of layer 10](#_Toc57650739)_
-
-_[**Błąd! Nieprawidłowy odsyłacz typu hiperłącze.** Portrayal of layers 10](#_Toc57650740)_
-
-_[**Błąd! Nieprawidłowy odsyłacz typu hiperłącze.** Structure of GetFeatureInfo responses 10](#_Toc57650741)_
-
-[Błąd! Nieprawidłowy odsyłacz typu hiperłącze. **Examples of implementations 11**](#_Toc57650742)
-
-[Błąd! Nieprawidłowy odsyłacz typu hiperłącze. **Final words 12**](#_Toc57650743)
-
-# Normative reference
+# Normative reference <a href="#_Toc59466269"/a>
 
 This guidance contains references to or derives concepts froorm the following documents:
 
-INSPIRE, Implementing Directive 2007/2/EC of the European Parliament and of the Council as
+INSPIRE, Implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and service
 
-regards interoperability of spatial data sets and service
+INSPIRE, INS NS, Commission Regulation (EC) No 976/2009 of 19 October 2009 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards the Network Services
 
-INSPIRE, INS NS, Commission Regulation (EC) No 976/2009 of 19 October 2009 implementing
+INSPIRE, INS DS, Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services
 
-Directive 2007/2/EC of the European Parliament and of the Council as regards the Network Services
-
-INSPIRE, INS DS, Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing
-
-Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of
-
-spatial data sets and services
-
-INSPIRE, INS DSTG, Technical Guidance for the implementation of INSPIRE Discovery Services
-
-OGC 06-042 OpenGIS Web Map Service (WMS) Implementation Specification
+INSPIRE, INS DSTG, Technical Guidance for the implementation of INSPIRE Discovery Services OGC 06-042 OpenGIS Web Map Service (WMS) Implementation Specification
 
 OGC 09-025r2 Web Feature Service 2.0 Interface Standard – With Corrigendum
 
