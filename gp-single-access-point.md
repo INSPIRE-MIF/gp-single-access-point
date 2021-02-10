@@ -2,47 +2,31 @@ Head Office of Geodesy and Cartography
 
 # **Guidance for the integration of dispersed WMS sources**
 
-Version 1.0.20
+'Version 1.0.20'
 
-21st 1st December 2020
+'21st of December 2020'
 
-**Warsaw; 2020**
 
-# Table of contents
+## Table of contents
 
-**[Normative reference](#_Toc59466269)**
+* [Normative reference](#normativereference)
+* [Terms](#terms)
+* [Introduction](#_Toc59466271)
+* [Standards](#_Toc59466272)
+  * [Supported operations](#_Toc59466273)
+    * [GetCapabilities](#_Toc59466274)
+    * [GetMap](#_Toc59466275)
+    * [GetFeatueInfo](#_Toc59466276)
+* [Standardisation of local services](#_Toc59466277)
+  * [CRSs](#_Toc59466278)
+  * [Names of layer](#_Toc59466279)
+  * [Portrayal of layers](#_Toc59466280)
+  * [Structure of GetFeatureInfo responses](#_Toc59466281)
+* [Examples of implementations](#_Toc59466282)
+* [Technical solution](#_Toc59466283)
+* [Final words](#_Toc59466284)
 
-**[Terms4](#_Toc59466270)**
-
-**[Introduction](#_Toc59466271)**
-
-**[Standards](#_Toc59466272)**
-
-[Supported operations](#_Toc59466273)
-
-_[GetCapabilities](#_Toc59466274)_
-
-_[GetMap](#_Toc59466275)_
-
-_[GetFeatueInfo](#_Toc59466276)_
-
-**[Standardisation of local services 10](#_Toc59466277)**
-
-_[CRSs](#_Toc59466278)_
-
-_[Names of layer](#_Toc59466279)_
-
-_[Portrayal of layers](#_Toc59466280)_
-
-_[Structure of GetFeatureInfo responses](#_Toc59466281)_
-
-**[Examples of implementations](#_Toc59466282)**
-
-[Technical solution](#_Toc59466283)
-
-**[Final words](#_Toc59466284)**
-
-# Normative reference <a href="#_Toc59466269"/a>
+# Normative reference <a name="normativereference"></a>
 
 This guidance contains references to or derives concepts froorm the following documents:
 
@@ -64,7 +48,7 @@ Specification SLD 1.1.0 (07-123r1)
 
 OGC 06-121r3 – OGC Web Services Common Specification (OWS) 1.1.0
 
-# Terms
+# Terms <a name="terms"></a>
 
 **collective service**
 
