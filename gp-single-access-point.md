@@ -94,9 +94,7 @@ Maintaining similar spatial data sets on a regional or local level leads to a di
 
 To avoid that a proxy service can be created, integrating collective services maintained on local, regional or even national level. Such proxy service form user perspective offers one seamless data set for the bigger area. Figure 1Figure 1 shows the concept of integrating collective service.
 
-![](RackMultipart20210209-4-rdgy8z_html_c4d87ac73b46d36d.gif)
-
-_Figure 1 Concept of the integrating collective service_
+![Concept of the integrating collective service](https://raw.githubusercontent.com/marty1357/gp-single-access-point/main/resources/images/collectiveserviceconcept.png "Concept of the integrating collective service")
 
 It is important to mention that while proxy service gives users access to data covering a bigger area, a user can still connect directly to a local service.
 
