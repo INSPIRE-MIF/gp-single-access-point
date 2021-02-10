@@ -92,9 +92,11 @@ The responsibility for maintenance of spatial data sets differs across European 
 
 Maintaining similar spatial data sets on a regional or local level leads to a dispersion of data sets and hinders users&#39; access to the spatial data. A user who wants to access and use the data published by many local or regional organisations has to put some additional effort to first find and later integrate data from many data sources. And if there are hundreds of such data sources it may require many hours of additional work or investing extra resources on integration services provided by specialised third parties.
 
-To avoid that a proxy service can be created, integrating collective services maintained on local, regional or even national level. Such proxy service form user perspective offers one seamless data set for the bigger area. Figure 1Figure 1 shows the concept of integrating collective service.
+To avoid that a proxy service can be created, integrating collective services maintained on local, regional or even national level. Such proxy service form user perspective offers one seamless data set for the bigger area. Figure 1 shows the concept of integrating collective service.
 
 ![Concept of the integrating collective service](https://raw.githubusercontent.com/marty1357/gp-single-access-point/main/resources/images/collectiveserviceconcept.png "Concept of the integrating collective service")
+
+_Figure 1 Concept of the integrating collective service.
 
 It is important to mention that while proxy service gives users access to data covering a bigger area, a user can still connect directly to a local service.
 
