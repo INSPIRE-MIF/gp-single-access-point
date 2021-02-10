@@ -97,6 +97,12 @@ To avoid that a proxy service can be created, integrating collective services ma
 ![Concept of the integrating collective service](https://raw.githubusercontent.com/marty1357/gp-single-access-point/main/resources/images/collectiveserviceconcept.png "Concept of the integrating collective service")
 
 _Figure 1 Concept of the integrating collective service._
+<p align="center">
+
+  <img src="https://raw.githubusercontent.com/marty1357/gp-single-access-point/main/resources/images/collectiveserviceconcept.png" alt="Concept of the integrating collective service." style="width:100%">
+  <figcaption>Figure 1 Concept of the integrating collective service.</figcaption>
+
+</p>
 
 It is important to mention that while proxy service gives users access to data covering a bigger area, a user can still connect directly to a local service.
 
