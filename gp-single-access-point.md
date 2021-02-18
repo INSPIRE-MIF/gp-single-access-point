@@ -207,7 +207,7 @@ To homogenise portrayal and content of collective network service standardisatio
 
 ## Technical solution <a name="technicalSolutions"></a> 
 
-The backbone of the Polish solution is [MapServer](https://mapserver.org/). MapServer is an Open Source software that can act as a WMS Server as well as a WMS Client. The WMS Client capabilities are accessed by defining WMS layers that connect to WMS servers. Detailed documentation on this can be found in [MapServer Documentation](https://www.mapserver.org/ogc/wms_client.html).
+The backbone of the Polish solution is [MapServer](https://mapserver.org/). MapServer is an Open Source software that can act as a WMS Server as well as a WMS Client. The MapServer allows for use of data from different servers, and enables the creation of a network of WMS services from which clients can build customized maps. Detailed documentation containing information about using MapServer’s WMS connection type to include layers from remote WMS servers can be found on [MapServer website](https://www.mapserver.org/ogc/wms_client.html).
 
 # Final words <a name="finalWords"></a> 
 
