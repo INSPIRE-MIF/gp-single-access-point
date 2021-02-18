@@ -44,6 +44,10 @@ OGC 05-078r4, OGC SLD, OGC™ Styled Layer Descriptor profile of the Web Map Ser
 
 OGC 06-121r3 – OGC Web Services Common Specification (OWS) 1.1.0
 
+Izdebski, W. (2017, 22 September). Analysis of the cadastral data published in the Polish Spatial Data Infrastructure. Polish Academy of Sciences. Retrieved from http://www.izdebski.edu.pl/kategorie/Publikacje/2017_WaldemarIzdebski_Analysis_of_the_cadastral_data_published_in_the_Polish_SDI.pdf
+
+Izdebski, W. (2017). Analysis of possibilities to increase the accessibility of WMS services from cadastral databases. Roczniki Geomatyki 2017, tom XV, zeszyt 4(79). Retrieved from http://www.izdebski.edu.pl/kategorie/Publikacje/pobierz.php?p=2017_PTIP_Izdebski_AnalizaMozliwosciZwiekszeniaDostepnosciDanychEwidencyjnychIIP.pdf
+
 # Terms <a name="terms"></a>
 
 **collective service**
