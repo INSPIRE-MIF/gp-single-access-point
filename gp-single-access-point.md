@@ -126,7 +126,7 @@ Proxy service from a service&#39;s user perspective works like any other WMS ser
 
 GetCapabilities operation works the same as in case of standard WMS service. The user usually via client application sends GetCapabilities request to the integrating collective service and the service sends a standard XML response, thus the request is not forwarded . Operation GetCapabilities is not sent to any local WMS services. This is shown in Figure 2Figure 2.
 
-![](RackMultipart20210209-4-rdgy8z_html_c50638a396e0b271.png)
+![GetCapabilities sequence diagram](https://raw.githubusercontent.com/marty1357/gp-single-access-point/main/resources/images/GetCapabilities.png "GetCapabilities sequence diagram")
 
 _Figure 2 GetCapabilities sequence diagram_
 
