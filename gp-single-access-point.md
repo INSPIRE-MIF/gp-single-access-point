@@ -124,7 +124,7 @@ Proxy service from a service&#39;s user perspective works like any other WMS ser
 
 ### GetCapabilities <a name="getCapabilities"></a> 
 
-GetCapabilities operation works the same as in case of standard WMS service. The user usually via client application sends GetCapabilities request to the integrating collective service and the service sends a standard XML response, thus the request is not forwarded . Operation GetCapabilities is not sent to any local WMS services. This is shown in Figure 2Figure 2.
+GetCapabilities operation works the same as in case of standard WMS service. The user usually via client application sends GetCapabilities request to the integrating collective service and the service sends a standard XML response, thus the request is not forwarded . Operation GetCapabilities is not sent to any local WMS services. This is shown in Figure 2.
 
 ![GetCapabilities sequence diagram](https://raw.githubusercontent.com/marty1357/gp-single-access-point/main/resources/images/GetCapabilities.png "GetCapabilities sequence diagram")
 
@@ -136,17 +136,17 @@ The main difference between a standard WMS service and integrating collective se
 
 To verify which scenario should be applied the proxyAs shown in Figure 3 collective service after receiving initial GetMap request from a client application in the first step checks whether which local services provide data sets for the area defined in a bounding box of the request. covers one or more than one spatial extends of data published by local services. To do this, the proxy collective service uses the databases containing polygon geometry of spatial extends of each connected local service. Then the request is forwarded only to local services that meet selection criteria. The local services send GetMap responses with map pictures covering their respective areas. These responses are captured by collective service and merged creating one map picture. Finally, this flattened picture is returned to the client application as a GetMap response.
 
-![](RackMultipart20210209-4-rdgy8z_html_438f8ba0d7fc5add.png)
+![GetMap sequence diagram - basic scenario](https://raw.githubusercontent.com/marty1357/gp-single-access-point/main/resources/images/GetMapManyLocalServices.png "GetMap sequence diagram - basic scenario")
 
 _Figure 3 GetMap sequence diagram - basic scenario_
 
-If bounding box of the GetMap request covers an area of spatial data set published by only one local service than specific optimisation can be applied. In such a scenario In the first scenario (one local service) shown in Figure 3, Figure 4 the integrating collective service does not forward the request to the local service but it returns to the client application proper URI pointing to a local service. This is done utilising properties of Hypertext Transfer Protocol (HTTP). Integrating Collective service sends a response with the 302 status code. Then client application sends a new request to the local URI returned by proxy collective service. Finally, local service sends appropriate GetMap response. If the request is correct the response is a picture with visualisation of a data set for requested spatial extent. It is important to mentionmentioning that the whole process of redirecting the request is handled by the server and client application in the background and as such is transparent from the perspective of the end-user. Redirecting a request to a proper local service also reduces to minimum hardware resources utilised by integrating collective service.
+If bounding box of the GetMap request covers an area of spatial data set published by only one local service than specific optimisation can be applied. In such a scenario In the first scenario (one local service) shown in Figure 4 the integrating collective service does not forward the request to the local service but it returns to the client application proper URI pointing to a local service. This is done utilising properties of Hypertext Transfer Protocol (HTTP). Integrating Collective service sends a response with the 302 status code. Then client application sends a new request to the local URI returned by proxy collective service. Finally, local service sends appropriate GetMap response. If the request is correct the response is a picture with visualisation of a data set for requested spatial extent. It is important to mentionmentioning that the whole process of redirecting the request is handled by the server and client application in the background and as such is transparent from the perspective of the end-user. Redirecting a request to a proper local service also reduces to minimum hardware resources utilised by integrating collective service.
 
-![](RackMultipart20210209-4-rdgy8z_html_21e89951cba75f9b.png)
+![GetMap sequence diagram - one local service optimised scenario](https://raw.githubusercontent.com/marty1357/gp-single-access-point/main/resources/images/GetMapOneLocalService.png "GetMap sequence diagram - one local service optimised scenario")
 
 _Figure 4 GetMap sequence diagram - one local service optimised scenario_
 
-In the second scenario (one local service) shown in Figure 4, ![](RackMultipart20210209-4-rdgy8z_html_21e89951cba75f9b.png) the request from the client is forwarded to all local services that publish the data covering the bounding box of the initial request. The local services send a GetMap response with map pictures covering their respective areas. These responses are captured by integrating service and merged creating one map picture. This flattened picture is sent to the client application as a GetMap response.
+In the second scenario (one local service) shown in Figure 4, the request from the client is forwarded to all local services that publish the data covering the bounding box of the initial request. The local services send a GetMap response with map pictures covering their respective areas. These responses are captured by integrating service and merged creating one map picture. This flattened picture is sent to the client application as a GetMap response.
 
 _Figure 53 GetMap sequence diagram - one local service scenario_
 
