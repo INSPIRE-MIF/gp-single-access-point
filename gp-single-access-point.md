@@ -84,11 +84,11 @@ making it possible, as a minimum, to display, navigate, zoom in/out, pan, or ove
 
 # Introduction <a name="introduction"></a> 
 
-The responsibility for maintenance of spatial data sets differs across European Union (EU) countries. The data set belonging to the same specific INSPIRE thematic category depending on the country can be maintained on the national level, regional and local level. For example, cadastral data sets in countries like Spain or Czechia and maintained on the national level whereas in Poland the data is maintained locally.
+The responsibility for maintenance of spatial data sets differs across European Union (EU) countries. The data set belonging to the same specific INSPIRE thematic category depending on the country can be maintained on the national level, regional and local level. For example, cadastral data sets in countries like Spain or Czechia and kept on the national level, whereas in Poland the data is maintained locally.
 
-Maintaining similar spatial data sets on a regional or local level leads to a dispersion of data sets and hinders users’ access to the spatial data. A user who wants to access and use the data published by many local or regional organisations has to put some additional effort to first find and later integrate data from many data sources. And if there are hundreds of such data sources it may require many hours of additional work or investing extra resources on integration services provided by specialised third parties.
+Maintaining similar spatial data sets on a regional or local level leads to a dispersion of data sets and hinders users’ access to the spatial data. A user who wants to access and use the data published by many local or regional organisations has to put some additional effort first to find and later integrate data from many data sources. And if there are hundreds of such data sources, it may require many hours of additional work or investing extra resources on integration services provided by specialised third parties.
 
-To avoid that a proxy service can be created, integrating services maintained on local, regional or even national level. Such proxy service from user perspective offers one seamless data set for the bigger area. Figure 1 shows the concept of collective service. 
+To avoid that a proxy service can be created, integrating services maintained on local, regional or even national levels. Such proxy service from a user perspective offers one seamless data set for the bigger area. Figure 1 shows the concept of collective service. 
 
 
 ![Concept of the collective service](https://raw.githubusercontent.com/marty1357/gp-single-access-point/main/resources/images/collectiveserviceconcept.png "Concept of the collective service")
@@ -112,7 +112,7 @@ This document provides guidelines on developing such collective service for view
 
 # Standards <a name="standards"></a> 
 
-The collective service should support WMS standards in at least two last and most popular versions 1.1.1 and 1.3.0. On the time of the creation of this document, it seems that the proposed solution can also be applied for new OGC API – Maps standard that is still under development.
+The collective service should support WMS standards in at least two last and most popular versions 1.1.1 and 1.3.0. At the time of creating of this document, it seems that the proposed solution can also be applied for new OGC API – Maps standard that is still under development.
 
 ## Supported operations <a name="supported"></a> 
 
@@ -126,7 +126,7 @@ Proxy service from a service’s user perspective works like any other WMS servi
 
 ### GetCapabilities <a name="getCapabilities"></a> 
 
-GetCapabilities operation works the same as in case of standard WMS service. The user usually via client application sends GetCapabilities request to the collective service and the service sends a standard XML response, thus the request is not forwarded to any local WMS service. This is shown in Figure 2.
+GetCapabilities operation works the same as in case of standard WMS service. The user usually via client application sends GetCapabilities request to the collective service and the service sends a typical XML response, thus the request is not forwarded to any local WMS service. This is shown in Figure 2.
 
 ![GetCapabilities sequence diagram](https://raw.githubusercontent.com/marty1357/gp-single-access-point/main/resources/images/GetCapabilities.png "GetCapabilities sequence diagram")
 
@@ -136,13 +136,13 @@ _Figure 2 GetCapabilities sequence diagram_
 
 The main difference between a standard WMS service and collective service is backend behaviour of GetMap operation.
 
-As shown in Figure 3 collective service after receiving initial GetMap request from a client application in the first step checks which local services provide data sets for the area defined in a bounding box of the request. To do this, the collective service uses the databases containing polygon geometry with spatial extends of each connected local service. Then the request is forwarded only to local services that meet selection criteria. The local services send GetMap responses with map pictures covering their respective areas. These responses are captured by collective service and merged creating one map picture. Finally, this flattened picture is returned to the client application as a GetMap response.
+As shown in Figure 3, collective service after receiving initial GetMap request from a client application in the first step checks which local services provide data sets for the area defined in a bounding box of the request. To do this, the collective service uses the databases containing polygon geometry with spatial extends of each connected local service. Then the request is forwarded only to local services that meet selection criteria. The local services send GetMap responses with map pictures covering their respective areas. These responses are captured by collective service and merged creating one map picture. Finally, this flattened picture is returned to the client application as a GetMap response.
 
 ![GetMap sequence diagram - basic scenario](https://raw.githubusercontent.com/marty1357/gp-single-access-point/main/resources/images/GetMapManyLocalServices.png "GetMap sequence diagram - basic scenario")
 
 _Figure 3 GetMap sequence diagram - basic scenario_
 
-If bounding box of the GetMap request covers an area of spatial data set published by only one local service than specific optimisation can be applied. In such a scenario shown in Figure 4 the collective service does not forward the request to the local service but it returns to the client application proper URI pointing directly to a local service. This is done utilising properties of Hypertext Transfer Protocol (HTTP). Collective service sends a response with the 302 status code. Then client application sends a new request to the local URI returned by collective service. Finally, local service sends appropriate GetMap response. If the request is correct the response is a picture with visualisation of a data set for requested spatial extent. It is important mentioning that the whole process of redirecting the request is handled by the server and client application in the background and as such is transparent from the perspective of the end-user. Redirecting a request to a proper local service also reduces to minimum hardware resources utilised by collective service. 
+If bounding box of the GetMap request covers an area of spatial data set published by only one local service than specific optimisation can be applied. In such a scenario shown in Figure 4, the collective service does not forward the request to the local service, but it returns to the client application proper URI pointing directly to a local service. This is done utilising properties of Hypertext Transfer Protocol (HTTP). Collective service sends a response with the 302 status code. Then client application sends a new request to the local URI returned by collective service. Finally, local service sends appropriate GetMap response. If the request is correct, the response is a picture with visualisation of a data set for requested spatial extent. It is important mentioning that the whole process of redirecting the request is handled by the server and client application in the background and as such is transparent from the perspective of the end-user. Redirecting a request to a proper local service also reduces to minimum hardware resources utilised by collective service. 
 
 ![GetMap sequence diagram - one local service optimised scenario](https://raw.githubusercontent.com/marty1357/gp-single-access-point/main/resources/images/GetMapOneLocalService.png "GetMap sequence diagram - one local service optimised scenario")
 
@@ -156,7 +156,7 @@ Handling of GetFeatureInfo requests and responses is similar to those of GetMap.
 
 # Standardisation of local services <a name="standardisationOfLocalServices"></a> 
 
-To facilitate the operation of integrating collective service the local WMS services should be standardised ideally in the following aspects:
+To facilitate the operation of integrating collective service, the local WMS services should be standardised ideally in the following aspects:
 
 - Coordinate Reference Systems (CRSs)
 - Names of layers
@@ -183,11 +183,11 @@ If the names of layers are not standardised the collective service when redirect
 
 ### Structure of GetFeatureInfo responses <a name="structureOfGetfeatureinfoResponses"></a> 
 
-The local services **should** provide GetFeatureInfo responses with the standardised content. This allows improving the end-user experience as responses returned by different local services via collective service look the same.
+The local services **should** provide GetFeatureInfo responses with the standardised content. This allows improves the end-user experience as responses returned by different local services via collective service look the same.
 
 For HTML format the standardisation can be achieved by developing an example of reference HTML response. In case of XML format, XSD application schema can be developed to validate GetFeatureInfo XML responses against the schema.
 
-Again, if GetFeatureInfo responses of local services do not follow the standardised, they can be transformed by the collective service to a common standard by applying for example Extensible Stylesheet Language Transformations (XSLT). Nonetheless, the standardisation of the GetFeatureInfo responses on a local service level is the recommended approach.
+Again, suppose GetFeatureInfo responses of local services do not follow the standard. In that case, they can be transformed by the collective service to a common structure by applying, for example, Extensible Stylesheet Language Transformations (XSLT). Nonetheless, the standardization of the GetFeatureInfo responses on a local service level is the recommended approach.
 
 # Examples of implementations <a name="examplesOfImplementation"></a> 
 
@@ -195,7 +195,7 @@ Collective services have been developed in Poland. The services integrate data s
 
 - KIEG – providing cadastral data (cadastral parcels and buildings) [https://integracja.gugik.gov.pl/cgi-bin/KrajowaIntegracjaEwidencjiGruntow](https://integracja.gugik.gov.pl/cgi-bin/KrajowaIntegracjaEwidencjiGruntow)
 - KIUT - providing data about utilities networks (electricity, water, telecommunication, sewers, gas and other) [https://integracja.gugik.gov.pl/cgi-bin/KrajowaIntegracjaUzbrojeniaTerenu](https://integracja.gugik.gov.pl/cgi-bin/KrajowaIntegracjaUzbrojeniaTerenu)
-- KIBDOT – providing high scale topographic data (containing the location of fences, trees, curbs, etc. ) [https://integracja.gugik.gov.pl/cgi-bin/KrajowaIntegracjaBazDanychObiektowTopograficznych](https://integracja.gugik.gov.pl/cgi-bin/KrajowaIntegracjaBazDanychObiektowTopograficznych)
+- KIBDOT – providing large scale topographic data (containing the location of fences, trees, curbs, etc. ) [https://integracja.gugik.gov.pl/cgi-bin/KrajowaIntegracjaBazDanychObiektowTopograficznych](https://integracja.gugik.gov.pl/cgi-bin/KrajowaIntegracjaBazDanychObiektowTopograficznych)
 
 ![Collective service scheme for cadastral data in Poland (KIEG)](https://raw.githubusercontent.com/marty1357/gp-single-access-point/main/resources/images/collectivecadastre.png "Collective service scheme for cadastral data in Poland (KIEG)")
 
@@ -203,12 +203,12 @@ _Figure 5 Collective service scheme for cadastral data in Poland (KIEG)_
 
 The collective services have been created utilising mainly Open Source software with additional custom scripts.
 
-To homogenise portrayal and content of collective network service standardisation documents have been created and endorsed by GUGiK and all major companies developing the software that helps local governments in Poland maintain the spatial data. The standards are available for [KIEG](http://www.gugik.gov.pl/__data/assets/pdf_file/0006/95046/Specyfikacja-powiatowych-uslug-WMS-z-EGiB-2.2.pdf) and [KIUT](http://www.gugik.gov.pl/__data/assets/pdf_file/0018/211815/Specyfikacja-uslug-publikacji-sieci-uzbrojenia-terenu-1.3.pdf). Additionally, there is [a web application](https://integracja.gugik.gov.pl/walidator/) available for validating KIEG and KIUT services published by counties against abovementioned standards.
+To homogenise portrayal and content of collective network service standardisation documents have been created and endorsed by GUGiK and all major companies developing the software that helps local governments in Poland maintain the spatial data. The standards are available for [KIEG](http://www.gugik.gov.pl/__data/assets/pdf_file/0006/95046/Specyfikacja-powiatowych-uslug-WMS-z-EGiB-2.2.pdf) and [KIUT](http://www.gugik.gov.pl/__data/assets/pdf_file/0018/211815/Specyfikacja-uslug-publikacji-sieci-uzbrojenia-terenu-1.3.pdf). Additionally, [a web application](https://integracja.gugik.gov.pl/walidator/) is available for validating KIEG and KIUT services published by counties against above-mentioned standards.
 
 ## Technical solution <a name="technicalSolutions"></a> 
 
-The backbone of the Polish solution is [MapServer](https://mapserver.org/). MapServer is an Open Source software that has the ability to act as a WMS Server as well as a WMS Client. The WMS Client capabilities are accessed by defining WMS layers that connect to WMS servers. Detailed documentation on this can be found in [MapServer Documentation](https://www.mapserver.org/ogc/wms_client.html).
+The backbone of the Polish solution is [MapServer](https://mapserver.org/). MapServer is an Open Source software that can act as a WMS Server as well as a WMS Client. The WMS Client capabilities are accessed by defining WMS layers that connect to WMS servers. Detailed documentation on this can be found in [MapServer Documentation](https://www.mapserver.org/ogc/wms_client.html).
 
 # Final words <a name="finalWords"></a> 
 
-This document focuses on the development of collective services with WMS interface. A similar approach can be utilised to develop a download Web Feature Service (WFS) or Web Coverage Service (WCS). However, due to the much higher complexity and heterogeneity of WFS and WCS service responses such implementation would require much additional effort to standardise and automatically integrate responses of local services.
+This document focuses on the development of collective services with WMS interface. A similar approach can be utilized to develop a download Web Feature Service (WFS) or Web Coverage Service (WCS). However, due to the much higher complexity and heterogeneity of WFS and WCS service responses, such implementation would require much additional effort to standardize and automatically integrate local services responses.
