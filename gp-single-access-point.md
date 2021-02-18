@@ -28,7 +28,7 @@ Head Office of Geodesy and Cartography
 
 # Normative reference <a name="normativereference"></a> 
 
-This guidance contains references to or derives concepts froorm the following documents:
+This guidance contains references to or derives concepts from the following documents:
 
 INSPIRE, Implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and service
 
