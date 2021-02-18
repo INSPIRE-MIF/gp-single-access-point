@@ -26,7 +26,7 @@ Head Office of Geodesy and Cartography
 * [Technical solution](#_Toc59466283)
 * [Final words](#_Toc59466284)
 
-# Normative reference <a name="normativereference"></a>
+# Normative reference <a name="normativereference"></a> 
 
 This guidance contains references to or derives concepts froorm the following documents:
 
