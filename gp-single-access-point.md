@@ -146,15 +146,7 @@ If bounding box of the GetMap request covers an area of spatial data set publish
 
 _Figure 4 GetMap sequence diagram - one local service optimised scenario_
 
-In the second scenario (one local service) shown in Figure 4, the request from the client is forwarded to all local services that publish the data covering the bounding box of the initial request. The local services send a GetMap response with map pictures covering their respective areas. These responses are captured by integrating service and merged creating one map picture. This flattened picture is sent to the client application as a GetMap response.
-
-_Figure 53 GetMap sequence diagram - one local service scenario_
-
- ![](RackMultipart20210209-4-rdgy8z_html_438f8ba0d7fc5add.png)
-
-_Figure 4 GetMap sequence diagram - many local services scenario_
-
-One of the very few drawbacks of the integrating collective services is additional time needed to process, redirect and forward the requests and responses by additional integratingthe services. However, if the proxy service uses appropriate hardware resources and is configured properly optimally, in practice such time penalty is measured in tens of milliseconds and thus is negligible froorm the end-user perspective.
+One of the very few drawbacks of the integrating collective services is additional time needed to process, redirect and forward the requests and responses by additional integratingthe services. However, if the proxy service uses appropriate hardware resources and is configured properly, in practice such time penalty is measured in tens of milliseconds and thus is negligible from the end-user perspective.
 
 ### GetFeatueInfo <a name="getFeatureInfo"></a> 
 
@@ -203,13 +195,13 @@ Integrating, proxyCollective services have been developed in Poland. The service
 - KIUT- providing data about utilities (electricity, water, telecommunication, sewers, gas and other networks) [https://integracja.gugik.gov.pl/cgi-bin/KrajowaIntegracjaUzbrojeniaTerenu](https://integracja.gugik.gov.pl/cgi-bin/KrajowaIntegracjaUzbrojeniaTerenu)
 - KIBDOT – providing high scale topographic data (containing the location of fences, trees, curbs, etc. ) [https://integracja.gugik.gov.pl/cgi-bin/KrajowaIntegracjaBazDanychObiektowTopograficznych](https://integracja.gugik.gov.pl/cgi-bin/KrajowaIntegracjaBazDanychObiektowTopograficznych)
 
-![](RackMultipart20210209-4-rdgy8z_html_1d56211924b930f4.gif)
+![Collective service scheme for cadastral data in Poland (KIEG)](https://raw.githubusercontent.com/marty1357/gp-single-access-point/main/resources/images/collectivecadastre.png "Collective service scheme for cadastral data in Poland (KIEG)")
 
-_Figure 64Collective service scheme for cadastral data in Poland (KIEG)_
+_Figure 5 Collective service scheme for cadastral data in Poland (KIEG)_
 
 The integrating collective services have been created utilising mainly Open Source software with additional custom scripts.
 
-To homogenise portrayal and content of integrated collective network service standards standardisation documents have been created and endorsed by GUGiK and all major companies developing the software that helps local governments in Poland maintain the spatial data. The standards are available for [KIEG](http://www.gugik.gov.pl/__data/assets/pdf_file/0006/95046/Specyfikacja-powiatowych-uslug-WMS-z-EGiB-2.2.pdf) and [KIUT](http://www.gugik.gov.pl/__data/assets/pdf_file/0018/211815/Specyfikacja-uslug-publikacji-sieci-uzbrojenia-terenu-1.3.pdf). Additionally, there is [a web application](https://integracja.gugik.gov.pl/walidator/) available for validating KIEG and KIUT services published by districts counties against abovementioned standards.
+To homogenise portrayal and content of integrated collective network service standardisation documents have been created and endorsed by GUGiK and all major companies developing the software that helps local governments in Poland maintain the spatial data. The standards are available for [KIEG](http://www.gugik.gov.pl/__data/assets/pdf_file/0006/95046/Specyfikacja-powiatowych-uslug-WMS-z-EGiB-2.2.pdf) and [KIUT](http://www.gugik.gov.pl/__data/assets/pdf_file/0018/211815/Specyfikacja-uslug-publikacji-sieci-uzbrojenia-terenu-1.3.pdf). Additionally, there is [a web application](https://integracja.gugik.gov.pl/walidator/) available for validating KIEG and KIUT services published by districts counties against abovementioned standards.
 
 ## Technical solution <a name="technicalSolutions"></a> 
 
