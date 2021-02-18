@@ -2,9 +2,9 @@ Head Office of Geodesy and Cartography
 
 # **Guidance for the integration of dispersed WMS sources**
 
-`Version 1.0.20`
+`Version 1.0.30`
 
-`21st of December 2020`
+`18th of February 2021`
 
 
 ## Table of contents
