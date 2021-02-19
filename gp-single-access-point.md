@@ -12,7 +12,8 @@ Head Office of Geodesy and Cartography
 * [Normative reference](#normativereference)
 * [Terms](#terms)
 * [Introduction](#introduction)
-* [Standards](#standards)
+* [Utilised standards](#standards)
+  * [INSPIRE Directive](#inspireDirective)
   * [Supported operations](#supportedOperations)
     * [GetCapabilities](#getCapabilities)
     * [GetMap](#getMap)
@@ -114,9 +115,11 @@ However, such an approach is not natively supported in case of INSPIRE view and 
 This document provides guidelines on developing such collective service for view services utilising Web Map Service (WMS) standard.
 
 
-# Standards <a name="standards"></a> 
+# Utilised standards <a name="standards"></a> 
 
 The collective service should support WMS standards in at least two last and most popular versions 1.1.1 and 1.3.0. At the time of creating of this document, it seems that the proposed solution can also be applied for new OGC API – Maps standard that is still under development.
+
+## INSPIRE Directive <a name="inspireDirective"></a> 
 
 ## Supported operations <a name="supported"></a> 
 
