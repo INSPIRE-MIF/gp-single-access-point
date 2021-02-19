@@ -35,25 +35,27 @@ This guidance contains references to or derives concepts from the following docu
 
 ## Normative References <a name="normativeReferences"></a> 
 
-INSPIRE, Implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and service
+[INSPIRE](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32007L0002), Implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and service
 
-INSPIRE, INS NS, Commission Regulation (EC) No 976/2009 of 19 October 2009 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards the Network Services
+[INSPIRE, INS NS](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32009R0976), Commission Regulation (EC) No 976/2009 of 19 October 2009 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards the Network Services
 
-INSPIRE, INS DS, Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services
+[INSPIRE, INS DS](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2014.354.01.0008.01.ENG), Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services
 
-INSPIRE, INS DSTG, Technical Guidance for the implementation of INSPIRE Discovery Services OGC 06-042 OpenGIS Web Map Service (WMS) Implementation Specification
+[OGC 09-025r2](https://inspire.ec.europa.eu/document-tags/discovery-services) Web Feature Service 2.0 Interface Standard – With Corrigendum
 
-OGC 09-025r2 Web Feature Service 2.0 Interface Standard – With Corrigendum
+[OGC 06-042](https://www.ogc.org/standards/wms) OpenGIS Web Map Service (WMS) Implementation Specification
 
-OGC 05-078r4, OGC SLD, OGC™ Styled Layer Descriptor profile of the Web Map Service Implementation Specification, version 1.1.0 (Release 4) and its corrigendum1 for OGC Implementation Specification SLD 1.1.0 (07-123r1)
+[OGC 05-078r4](https://www.ogc.org/standards/sld), OGC SLD, OGC™ Styled Layer Descriptor profile of the Web Map Service Implementation Specification, version 1.1.0 (Release 4) and its corrigendum1 for OGC Implementation Specification SLD 1.1.0 (07-123r1)
 
-OGC 06-121r3 – OGC Web Services Common Specification (OWS) 1.1.0
+[OGC 06-121r3](https://www.ogc.org/standards/common) – OGC Web Services Common Specification (OWS) 1.1.0
 
 Izdebski, W. (2017, 22 September). Analysis of the cadastral data published in the Polish Spatial Data Infrastructure. _Polish Academy of Sciences_. Retrieved from http://www.izdebski.edu.pl/kategorie/Publikacje/2017_WaldemarIzdebski_Analysis_of_the_cadastral_data_published_in_the_Polish_SDI.pdf
 
 Izdebski, W. (2017). Analysis of possibilities to increase the accessibility of WMS services from cadastral databases. _Roczniki Geomatyki 2017, tom XV, zeszyt 4(79)_. Retrieved from http://www.izdebski.edu.pl/kategorie/Publikacje/pobierz.php?p=2017_PTIP_Izdebski_AnalizaMozliwosciZwiekszeniaDostepnosciDanychEwidencyjnychIIP.pdf
 
 ## Technical References <a name="technicalReferences"></a> 
+
+Technical Guidance for the implementation of INSPIRE Discovery Services OGC 06-042 OpenGIS Web Map Service (WMS) Implementation Specification [INSPIRE, INS DSTG](),
 
 Technical Guidance for the implementation of INSPIRE View Services, version 3.11, [INS TG WMS+WMTS](https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1)
 
