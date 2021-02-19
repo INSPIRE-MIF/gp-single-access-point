@@ -63,10 +63,6 @@ making it possible to search for spatial data sets and services on the basis of 
 
 enabling copies of spatial data sets, or parts of such sets, to be downloaded and, where practicable, accessed directly [INSPIRE Directive]
 
-**integrating, proxy service**
-
-intermediary network service working on top and integrating many network services providing the same or similar spatial data set but with the different spatial extent
-
 **metadata**
 
 information describing spatial data sets and spatial
