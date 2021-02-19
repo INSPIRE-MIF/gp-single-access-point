@@ -9,7 +9,9 @@ Head Office of Geodesy and Cartography
 
 ## Table of contents
 
-* [Normative reference](#normativereference)
+* [References](#references)
+  * [Normative References](#normativeReferences)
+  * [Technical References](#technicalReferences)
 * [Terms](#terms)
 * [Introduction](#introduction)
 * [Utilised standards](#standards)
@@ -27,7 +29,8 @@ Head Office of Geodesy and Cartography
 * [Technical solution](#technicalSolutions)
 * [Final words](#finalWords)
 
-# Normative reference <a name="normativereference"></a> 
+# References <a name="references"></a> 
+## Normative References <a name="normativeReferences"></a> 
 
 This guidance contains references to or derives concepts from the following documents:
 
@@ -48,6 +51,10 @@ OGC 06-121r3 – OGC Web Services Common Specification (OWS) 1.1.0
 Izdebski, W. (2017, 22 September). Analysis of the cadastral data published in the Polish Spatial Data Infrastructure. _Polish Academy of Sciences_. Retrieved from http://www.izdebski.edu.pl/kategorie/Publikacje/2017_WaldemarIzdebski_Analysis_of_the_cadastral_data_published_in_the_Polish_SDI.pdf
 
 Izdebski, W. (2017). Analysis of possibilities to increase the accessibility of WMS services from cadastral databases. _Roczniki Geomatyki 2017, tom XV, zeszyt 4(79)_. Retrieved from http://www.izdebski.edu.pl/kategorie/Publikacje/pobierz.php?p=2017_PTIP_Izdebski_AnalizaMozliwosciZwiekszeniaDostepnosciDanychEwidencyjnychIIP.pdf
+
+## Technical References <a name="technicalReferences"></a> 
+
+Technical Guidance for the implementation of INSPIRE View Services, version 3.11, [INS TG WMS+WMTS](https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1)
 
 # Terms <a name="terms"></a>
 
