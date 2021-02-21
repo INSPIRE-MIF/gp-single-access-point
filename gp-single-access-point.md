@@ -50,10 +50,6 @@ This guidance contains references to or derives concepts from the following docu
 
 [OGC 06-121r3](https://www.ogc.org/standards/common) – OGC Web Services Common Specification (OWS) 1.1.0
 
-Izdebski, W. (2017, 22 September). Analysis of the cadastral data published in the Polish Spatial Data Infrastructure. _Polish Academy of Sciences_. Retrieved from http://www.izdebski.edu.pl/kategorie/Publikacje/2017_WaldemarIzdebski_Analysis_of_the_cadastral_data_published_in_the_Polish_SDI.pdf
-
-Izdebski, W. (2017). Analysis of possibilities to increase the accessibility of WMS services from cadastral databases. _Roczniki Geomatyki 2017, tom XV, zeszyt 4(79)_. Retrieved from http://www.izdebski.edu.pl/kategorie/Publikacje/pobierz.php?p=2017_PTIP_Izdebski_AnalizaMozliwosciZwiekszeniaDostepnosciDanychEwidencyjnychIIP.pdf
-
 ## Technical References <a name="technicalReferences"></a> 
 
 Technical Guidance for the implementation of INSPIRE Discovery Services OGC 06-042 OpenGIS Web Map Service (WMS) Implementation Specification [INSPIRE, INS DSTG](),
@@ -231,3 +227,7 @@ The backbone of the Polish solution is [MapServer](https://mapserver.org/). MapS
 This document focuses on the development of collective services with WMS interface. A similar approach can be utilized to develop a download Web Feature Service (WFS) or Web Coverage Service (WCS). However, due to the much higher complexity and heterogeneity of WFS and WCS service responses, such implementation would require much additional effort to standardize and automatically integrate local services responses.
 
 # Bibliography <a name="bibliography"></a> 
+
+Izdebski, W. (2017, 22 September). Analysis of the cadastral data published in the Polish Spatial Data Infrastructure. _Polish Academy of Sciences_. Retrieved from http://www.izdebski.edu.pl/kategorie/Publikacje/2017_WaldemarIzdebski_Analysis_of_the_cadastral_data_published_in_the_Polish_SDI.pdf
+
+Izdebski, W. (2017). Analysis of possibilities to increase the accessibility of WMS services from cadastral databases. _Roczniki Geomatyki 2017, tom XV, zeszyt 4(79)_. Retrieved from http://www.izdebski.edu.pl/kategorie/Publikacje/pobierz.php?p=2017_PTIP_Izdebski_AnalizaMozliwosciZwiekszeniaDostepnosciDanychEwidencyjnychIIP.pdf
