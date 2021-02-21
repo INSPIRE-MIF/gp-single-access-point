@@ -28,6 +28,7 @@ Head Office of Geodesy and Cartography
 * [Examples of implementations](#examplesOfImplementation)
 * [Technical solution](#technicalSolutions)
 * [Final words](#finalWords)
+* [Bibliography](#bibliography)
 
 # References <a name="references"></a> 
 
@@ -225,3 +226,5 @@ The backbone of the Polish solution is [MapServer](https://mapserver.org/). MapS
 # Final words <a name="finalWords"></a> 
 
 This document focuses on the development of collective services with WMS interface. A similar approach can be utilized to develop a download Web Feature Service (WFS) or Web Coverage Service (WCS). However, due to the much higher complexity and heterogeneity of WFS and WCS service responses, such implementation would require much additional effort to standardize and automatically integrate local services responses.
+
+# Bibliography <a name="bibliography"></a> 
