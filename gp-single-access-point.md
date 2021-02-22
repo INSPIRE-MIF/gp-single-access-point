@@ -125,7 +125,7 @@ The collective service should support WMS standards in at least two last and mos
 
 The guidelines contain information on setting up specific WMS services created utilising OGC WMS specifications ([OGC 06-042](https://www.ogc.org/standards/wms)).
 
-Requirements and recommendations defined in INSPIRE Technical guidelines for view services ([INS TG WMS+WMTS](https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1)) extending OGC WMS specifications are transparent from the guidelines' perspective. Implementation of INS TG WMS+WMTS will not interfere with the features of WMS services proposed in the document.
+Requirements and recommendations defined in INSPIRE Technical guidelines for view services ([INS TG WMS+WMTS](https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1)) extending OGC WMS specifications are transparent from this document perspective. Implementation of INS TG WMS+WMTS will not interfere with the features of WMS services proposed in this guidelines.
 
 ## Supported operations <a name="supported"></a> 
 
