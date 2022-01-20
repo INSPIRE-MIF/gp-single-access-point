@@ -36,6 +36,7 @@ cp mapserver-7.0.7.zip /usr/src/
 ```
 Unzip the file
 ```
+cd /usr/src/
 apt install unzip
 unzip mapserver-7.0.7.zip
 ```
