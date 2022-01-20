@@ -26,7 +26,7 @@ apt-get install apache2 apache2-bin apache2-utils libapache2-mod-fcgid
 a2enmod cgi fcgid
 Check whether the Apache server is working by putting its IP address in the web browser. If everything is ok, the browser should display the Apache default website.
 
-# MapServer installation
+### MapServer installation
 Download the file mapserver-7.0.7.zip from GitHub and copy it to location /usr/src/
 ```
 wget 
@@ -65,7 +65,7 @@ SUPPORTS=WFS_SERVER SUPPORTS=WCS_SERVER SUPPORTS=THREADS SUPPORTS=GEOS INPUT=JPE
 INPUT=POSTGIS INPUT=OGR INPUT=GDAL INPUT=SHAPEFILE
 ```
 
-# Building application (optional)
+### Building application (optional)
 If you want to compile MapServer code, you may optionally install appropriate libraries
 apt install build-essential protobuf-c-compiler protobuf-compiler libprotobuf-c-dev
 More about compiling MapServer you can find in [the documentation](https://www.mapserver.org/installation/unix.html).
