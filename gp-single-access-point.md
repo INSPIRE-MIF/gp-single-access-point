@@ -222,6 +222,8 @@ To homogenise portrayal and content of collective network service standardisatio
 
 The backbone of the Polish solution is [MapServer](https://mapserver.org/). MapServer is an Open Source software that can act as a WMS Server as well as a WMS Client. The MapServer allows for use of data from different servers, and enables the creation of a network of WMS services from which clients can build customized maps. Detailed documentation containing information about using MapServer’s WMS connection type to include layers from remote WMS servers can be found on [MapServer website](https://www.mapserver.org/ogc/wms_client.html).
 
+Guidelines of setting up a simple integration service can be found in the [Description of a testbed implementation of collective WMS service](sample-implementaion.md) document.
+
 # Final words <a name="finalWords"></a> 
 
 This document focuses on the development of collective services with WMS interface. A similar approach can be utilized to develop a download Web Feature Service (WFS) or Web Coverage Service (WCS). However, due to the much higher complexity and heterogeneity of WFS and WCS service responses, such implementation would require much additional effort to standardize and automatically integrate local services responses.
