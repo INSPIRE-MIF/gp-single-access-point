@@ -103,7 +103,7 @@ cd  /usr/lib/cgi-bin/
 wget https://raw.githubusercontent.com/marcingrudzien/gp-single-access-point/4cc1b65332560291ba1e6bf07a6a3230dfbf803a/resources/software/wmssampleintegration
 wget https://raw.githubusercontent.com/marcingrudzien/gp-single-access-point/4cc1b65332560291ba1e6bf07a6a3230dfbf803a/resources/software/wms_info.php
 chmod 755 wmssampleintegration
-chmod 755 wms_php.info
+chmod 755 wms_info.php
 ```
 Set a correct URL for the service. Use the text editor of your choice, e.g. nano.
 ```
