@@ -19,11 +19,12 @@ The installation and configuration described in this document have been tested o
 The document assumes that the user with root privileges using the console carries the installation process with the installation process.
 
 ### Apache installation
-``
-sudo apt-get update
-sudo apt-get upgrade
+```
+apt-get update
+apt-get upgrade
 apt-get install apache2 apache2-bin apache2-utils libapache2-mod-fcgid
 a2enmod cgi fcgid
+```
 Check whether the Apache server is working by putting its IP address in the web browser. If everything is ok, the browser should display the Apache default website.
 
 ### MapServer installation
