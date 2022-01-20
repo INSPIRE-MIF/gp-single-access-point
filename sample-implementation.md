@@ -85,8 +85,8 @@ cp.map and capabilities.xml files can be placed in a location of your choice, e.
 cd /srv
 mkdir cp
 cd cp
-wget
-wget
+wget https://raw.githubusercontent.com/marcingrudzien/gp-single-access-point/4cc1b65332560291ba1e6bf07a6a3230dfbf803a/resources/software/cp.map
+wget https://raw.githubusercontent.com/marcingrudzien/gp-single-access-point/4cc1b65332560291ba1e6bf07a6a3230dfbf803a/resources/software/capabilities.xml
 ```
 Create error.txt file for MapServer logs
 ```
@@ -101,8 +101,8 @@ Place wmssampleintegration and wms_info.php files in folder /usr/lib/cgi-bin/ an
 wms_info.php file contains website with information about the service. This redirection is optional and doesn’t have to be implemented. However, well designed information website improves the usability of the service.
 ```
 cd  /usr/lib/cgi-bin/
-wget
-wget
+wget https://raw.githubusercontent.com/marcingrudzien/gp-single-access-point/4cc1b65332560291ba1e6bf07a6a3230dfbf803a/resources/software/wmssampleintegration
+wget https://raw.githubusercontent.com/marcingrudzien/gp-single-access-point/4cc1b65332560291ba1e6bf07a6a3230dfbf803a/resources/software/wms_info.php
 chmod 755 wmssampleintegration
 chmod 755 wms_php.info
 ```
