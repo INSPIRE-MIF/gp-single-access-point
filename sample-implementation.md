@@ -116,7 +116,7 @@ nano /srv/cp/capabilities.xml
 ```
 Verify whether service works ```http://<server_url>/cgi-bin/wmssampleintegration?REQUEST=GetCapabilities&SERVICE=WMS``` should return the capabilities file. Depending on your specific configuration of your server, please remember to replace ```<server_url>``` with appropriate IP address or domain name
 ```
-http://<server_url>//cgi-bin/wmssampleintegration??SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=505886.5094928676845,683818.40235988528,506703.8239921919885,684540.2640709673287&CRS=EPSG:2180&WIDTH=968&HEIGHT=1096&LAYERS=cadastral_parcels,labels&STYLES=,&FORMAT=image/png&DPI=72&MAP_RESOLUTION=72&FORMAT_OPTIONS=dpi:72&TRANSPARENT=TRUE
+http://<server_url>//cgi-bin/wmssampleintegration??SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=505895.8969211342046,683893.0375732699176,506340.1024577722419,684271.6885483335936&CRS=EPSG:2180&WIDTH=387&HEIGHT=455&LAYERS=cadastral_parcels,labels&STYLES=,&FORMAT=image/png&DPI=72&MAP_RESOLUTION=72&FORMAT_OPTIONS=dpi:72&TRANSPARENT=TRUE
 ```
 should return the sample map showing cadastral parcels.
 ![Sample GetMap response](https://raw.githubusercontent.com/marty1357/gp-single-access-point/main/resources/images/sample_map.png "Sample GetMap response")
