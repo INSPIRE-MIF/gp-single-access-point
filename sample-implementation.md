@@ -105,12 +105,12 @@ wget https://raw.githubusercontent.com/marcingrudzien/gp-single-access-point/4cc
 chmod 755 wmssampleintegration
 chmod 755 wms_info.php
 ```
-Set a correct URL for the service. Use the text editor of your choice, e.g. nano.
+Current service endpoint is set to locahost. If needed change it in configuration files to a correct URL of the service. Use the text editor of your choice, e.g. nano.
 ```
 nano /srv/cp/cp.map
 ```
 Edit line with parameter OWS_ONLINERESOURCE and change its value to an appropriate endpoint URL.
-Make also similar changes in the capabilities.xml file. Endpoint has to be alerted in several locations in this file.
+Make also similar changes in the capabilities.xml file. Be aware that endpoint has to be alerted in several locations in capabilities.xml file.
 ```
 nano /srv/cp/capabilities.xml
 ```
