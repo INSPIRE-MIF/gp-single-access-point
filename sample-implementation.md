@@ -3,7 +3,7 @@
 ##Introduction
 This document describes the process of installation and configuration of modified MapServer supporting integrating WMS services. 
 Before reading this document, it is advisable to read the document Guidance for the integration of dispersed WMS sources first to understand the theoretical background of collective services.
-The key MapServer functionality for the WMS server integration is WMS Client. The functionality allows MapServer to transparently fetch remote layers over WMS, basically acting like a client, and combine them with other layers to generate the final map. You can find more about the WMS client configuration in [MapServer documentation] (https://mapserver.org/ogc/wms_client.html).
+The key MapServer functionality for the WMS server integration is WMS Client. The functionality allows MapServer to transparently fetch remote layers over WMS, basically acting like a client, and combine them with other layers to generate the final map. You can find more about the WMS client configuration in [MapServer documentation](https://mapserver.org/ogc/wms_client.html).
 
 ##Changes to MapServer
 This version of MapServer has been built on modified version 7.0.7. Following changes/optimisations have been made in the code:
