@@ -42,9 +42,9 @@ unzip mapserver-7.0.7.zip
 ```
 Install libraries required and recommended to run MapServer
 ```
-apt install gdal-bin libgdal-dev libproj-dev proj-bin libpng-dev / 
-freetype2-demos zlib1g-dev libgeos-dev libgif-dev cmake libfcgi-dev / 
-libpcre3 libpcre3-dev libcairo2-dev libharfbuzz-dev /
+apt install gdal-bin libgdal-dev libproj-dev proj-bin libpng-dev \ 
+freetype2-demos zlib1g-dev libgeos-dev libgif-dev cmake libfcgi-dev \ 
+libpcre3 libpcre3-dev libcairo2-dev libharfbuzz-dev \
 libfribidi-dev libcurl4-gnutls-dev curl php php-common
 ```
 Copy file mapserv file from /usr/src/mapserv-7.0.7/build/ to /usr/lib/cgi-bin/
