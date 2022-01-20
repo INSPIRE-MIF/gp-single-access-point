@@ -90,9 +90,9 @@ touch errot.txt
 chmod 666 error.txt
 
 Place wmssampleintegration and wms_info.php files in folder /usr/lib/cgi-bin/ and give them required privileges. File wmssampleintegration redirects incoming user request. There are three redirections in the sample implementation:
-•	GetCapabilities request is redirected to srv/cp/capabilities.xml
-•	request without parameters is redirected to wms_info.php file
-•	request with parameters other than GetCapabilities is redirected to MapServer
+-	GetCapabilities request is redirected to srv/cp/capabilities.xml
+-	request without parameters is redirected to wms_info.php file
+-	request with parameters other than GetCapabilities is redirected to MapServer
 wms_info.php file contains website with information about the service. This redirection is optional and doesn’t have to be implemented. However, well designed information website improves the usability of the service.
 
 cd  /usr/lib/cgi-bin/
