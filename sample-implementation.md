@@ -90,7 +90,7 @@ wget https://raw.githubusercontent.com/marcingrudzien/gp-single-access-point/4cc
 ```
 Create error.txt file for MapServer logs
 ```
-touch errot.txt
+touch error.txt
 chmod 666 error.txt
 ```
 
