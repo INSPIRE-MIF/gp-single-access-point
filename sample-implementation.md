@@ -29,12 +29,12 @@ systemctl restart apache2
 Check whether the Apache server is working by putting its IP address in the web browser. If everything is ok, the browser should display the Apache default website.
 
 ### MapServer installation
-Download the file mapserver-7.0.7.zip from GitHub and copy it to location /usr/src/
+Download the file mapserver-7.0.7.zip from GitHub and copy it to location /usr/src/.
 ```
 wget 
 cp mapserver-7.0.7.zip /usr/src/
 ```
-Unzip the file
+Unzip the file.
 ```
 cd /usr/src/
 apt install unzip
@@ -44,16 +44,16 @@ Install libraries required and recommended to run MapServer. Confirm by pressing
 ```
 apt install gdal-bin libgdal-dev libproj-dev proj-bin libpng-dev freetype2-demos zlib1g-dev libgeos-dev libgif-dev cmake libfcgi-dev libpcre3 libpcre3-dev libcairo2-dev libharfbuzz-dev libfribidi-dev libcurl4-gnutls-dev curl php php-common
 ```
-Copy file mapserv file from /usr/src/mapserv-7.0.7/build/ to /usr/lib/cgi-bin/
+Copy file mapserv file from /usr/src/mapserv-7.0.7/build/ to /usr/lib/cgi-bin/.
 ```
 cp /usr/src/mapserver-7.0.7/build/mapserv /usr/lib/cgi-bin/
 ```
-Make sure the mapserv file has executable permissions
+Make sure the mapserv file has executable permissions.
 ```
 cd /usr/lib/cgi-bin/
 chmod 755 mapserv
 ```
-check whetehr mapserver works
+Check whetehr mapserver works.
 ```
 ./mapserv -v
 ```
@@ -66,7 +66,7 @@ INPUT=POSTGIS INPUT=OGR INPUT=GDAL INPUT=SHAPEFILE
 ```
 
 ### Building application (optional)
-If you want to compile MapServer code, you may optionally install appropriate libraries
+If you want to compile MapServer code, you may optionally install appropriate libraries.
 apt install build-essential protobuf-c-compiler protobuf-compiler libprotobuf-c-dev
 More about compiling MapServer you can find in [the documentation](https://www.mapserver.org/installation/unix.html).
 In order to enable key wms client feature, you will need to pass the WITH_CLIENT_WMS option to the configure script e.g.:
@@ -114,7 +114,7 @@ Make also similar changes in the capabilities.xml file. Be aware that endpoint h
 ```
 nano /srv/cp/capabilities.xml
 ```
-Verify whether service works ```http://<server_url>/cgi-bin/wmssampleintegration?REQUEST=GetCapabilities&SERVICE=WMS``` should return the capabilities file. Depending on your specific configuration of your server, please remember to replace ```<server_url>``` with appropriate IP address or domain name
+Verify whether service works ```http://<server_url>/cgi-bin/wmssampleintegration?REQUEST=GetCapabilities&SERVICE=WMS``` should return the capabilities file. Depending on your specific configuration of your server, please remember to replace ```<server_url>``` with appropriate IP address or domain name.
 ```
 http://<server_url>//cgi-bin/wmssampleintegration?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=505895.8969211342046,683893.0375732699176,506340.1024577722419,684271.6885483335936&CRS=EPSG:2180&WIDTH=387&HEIGHT=455&LAYERS=cadastral_parcels,labels&STYLES=,&FORMAT=image/png&DPI=72&MAP_RESOLUTION=72&FORMAT_OPTIONS=dpi:72&TRANSPARENT=TRUE
 ```
