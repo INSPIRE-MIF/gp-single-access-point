@@ -77,36 +77,44 @@ cmake -DCMAKE_INSTALL_PREFIX=/opt -MAKE_PREFIX_PATH=/usr/local:/opt:/lib:/usr/lo
 ## Collective service configuration
 This chapter describes how to set up a copy of sample service in other environment.
 
-Download config files and place them in appropriate locations.
+###Download config files and place them in appropriate locations.
 
-cp.map and capabilities.xml files can be placed in a location of your choice, e.g. /srv/cp/. cp.map file contains service configuration including URL of local services. More information about WMS service configuration in MapServer is available in MapServer documentation (https://mapserver.org/ogc/wms_server.html). capabilities.xml file contains GetCapabilities response of collective WMS service. When a user sends GetCapabilities request the default MapServer response is replaced by the one in capabilities.xml file. It is important to point out that it is not required to replace default GetCapabilities response. However, modified GetCapabilities response is shorter, simplified and more clear and thus more readable for a user.
+cp.map and capabilities.xml files can be placed in a location of your choice, e.g. ```/srv/cp/```. cp.map file contains service configuration including URL of local services. More information about WMS service configuration in MapServer is available in [MapServer documentation](https://mapserver.org/ogc/wms_server.html). capabilities.xml file contains GetCapabilities response of collective WMS service. When a user sends GetCapabilities request the default MapServer response is replaced by the one in capabilities.xml file. It is important to point out that it is not required to replace default GetCapabilities response. However, modified GetCapabilities response is shorter, simplified and more clear and thus more readable for a user.
+```
 cd /srv
 mkdir cp
 cd cp
 wget
 wget
+```
 Create error.txt file for MapServer logs
+```
 touch errot.txt
 chmod 666 error.txt
+```
 
 Place wmssampleintegration and wms_info.php files in folder /usr/lib/cgi-bin/ and give them required privileges. File wmssampleintegration redirects incoming user request. There are three redirections in the sample implementation:
--	GetCapabilities request is redirected to srv/cp/capabilities.xml
--	request without parameters is redirected to wms_info.php file
--	request with parameters other than GetCapabilities is redirected to MapServer
+-	GetCapabilities request is redirected to srv/cp/capabilities.xml,
+-	request without parameters is redirected to wms_info.php file,
+-	request with parameters other than GetCapabilities is redirected to MapServer.
 wms_info.php file contains website with information about the service. This redirection is optional and doesn’t have to be implemented. However, well designed information website improves the usability of the service.
-
+```
 cd  /usr/lib/cgi-bin/
 wget
 wget
 chmod 755 wmssampleintegration
 chmod 755 wms_php.info
-
+```
 Set a correct URL for the service. Use the text editor of your choice, e.g. nano.
+```
 nano /srv/cp/cp.map
+```
 Edit line with parameter OWS_ONLINERESOURCE and change its value to an appropriate endpoint URL.
 Make also similar changes in the capabilities.xml file. Endpoint has to be alerted in several locations in this file.
+```
 nano /srv/cp/capabilities.xml
-
-Verify whether service works http://<server_url>/cgi-bin/wmssampleintegration?REQUEST=GetCapabilities&SERVICE=WMS should return the capabilities file. Depending on your specific configuration of your server, please remember to replace <server_url> with appropriate IP address or domain name
-http://<server_url>//cgi-bin/wmssampleintegration?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=505599.190755055286,683480.588842289988,506706.9429105632007,684719.5045823869295&CRS=EPSG:2180&WIDTH=1250&HEIGHT=1117&LAYERS=cadastral_parcels&STYLES=&FORMAT=image/png&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE  should return the map with cadastral parcels file
+```
+Verify whether service works ```http://<server_url>/cgi-bin/wmssampleintegration?REQUEST=GetCapabilities&SERVICE=WMS``` should return the capabilities file. Depending on your specific configuration of your server, please remember to replace ```<server_url>``` with appropriate IP address or domain name
+```http://<server_url>//cgi-bin/wmssampleintegration?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=505599.190755055286,683480.588842289988,506706.9429105632007,684719.5045823869295&CRS=EPSG:2180&WIDTH=1250&HEIGHT=1117&LAYERS=cadastral_parcels&STYLES=&FORMAT=image/png&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE```
+should return the sample map showing cadastral parcels.
  
