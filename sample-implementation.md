@@ -49,7 +49,8 @@ libfribidi-dev libcurl4-gnutls-dev curl php php-common
 ```
 Copy file mapserv file from /usr/src/mapserv-7.0.7/build/ to /usr/lib/cgi-bin/
 ```
-cp /usr/src/mapserv-7.0.7/build/mapserv /usr/lib/cgi-bin/
+cp /usr/src/mapserv-7.0.7/build/
+cp mapserv /usr/lib/cgi-bin/
 ```
 Make sure the mapserv file has executable permissions
 ```
