@@ -24,6 +24,7 @@ apt-get update
 apt-get upgrade
 apt-get install apache2 apache2-bin apache2-utils libapache2-mod-fcgid
 a2enmod cgi fcgid
+systemctl restart apache2
 ```
 Check whether the Apache server is working by putting its IP address in the web browser. If everything is ok, the browser should display the Apache default website.
 
