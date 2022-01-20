@@ -16,7 +16,7 @@ Modified MapServer Map files containing services’ configuration cannot be used
 
 ## Installation
 The installation and configuration described in this document have been tested on Debian 9. Installation and configuration on other operating systems may require changes related to versions of installed libraries and further alteration of MapServer code.
-The document assumes that the user with root privileges using the console carries the installation process with the installation process.
+The document assumes that the user with **root privileges** carries the installation process using the terminal.
 
 ### Apache installation
 ```
