@@ -75,9 +75,9 @@ cmake -DCMAKE_INSTALL_PREFIX=/opt -MAKE_PREFIX_PATH=/usr/local:/opt:/lib:/usr/lo
 ````
 
 ## Collective service configuration
-This chapter describes how to set up a copy of sample service in other environment.
+This chapter describes step by step how to set up a copy of the sample service in another environment.
 
-###Download config files and place them in appropriate locations.
+Download config files and place them in appropriate locations on your server. Altogether you have to download four configuration files and create one for MapServer logs.
 
 cp.map and capabilities.xml files can be placed in a location of your choice, e.g. ```/srv/cp/```. cp.map file contains service configuration including URL of local services. More information about WMS service configuration in MapServer is available in [MapServer documentation](https://mapserver.org/ogc/wms_server.html). capabilities.xml file contains GetCapabilities response of collective WMS service. When a user sends GetCapabilities request the default MapServer response is replaced by the one in capabilities.xml file. It is important to point out that it is not required to replace default GetCapabilities response. However, modified GetCapabilities response is shorter, simplified and more clear and thus more readable for a user.
 ```
