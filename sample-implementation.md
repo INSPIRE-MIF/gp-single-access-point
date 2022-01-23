@@ -79,7 +79,7 @@ This chapter describes step by step how to set up a copy of the sample service i
 
 Download config files and place them in appropriate locations on your server. Altogether you have to download four configuration files and create one for MapServer logs.
 
-cp.map and capabilities.xml files can be placed in a location of your choice, e.g. ```/srv/cp/```. cp.map file contains service configuration including URL of local services. More information about WMS service configuration in MapServer is available in [MapServer documentation](https://mapserver.org/ogc/wms_server.html). capabilities.xml file contains GetCapabilities response of collective WMS service. When a user sends GetCapabilities request the default MapServer response is replaced by the one in capabilities.xml file. It is important to point out that it is not required to replace default GetCapabilities response. However, modified GetCapabilities response is shorter, simplified and more clear and thus more readable for a user.
+[cp.map](gp-single-access-point/resources/software/cp.map) and [capabilities.xml](gp-single-access-point/resources/software/capabilities.xml) files can be placed in a location of your choice, e.g. ```/srv/cp/```. However, if you change the location of the files, you may have to change relevant Apache configuration files. cp.map file contains service configuration including URL of local services. More information about WMS service configuration in MapServer is available in [MapServer documentation](https://mapserver.org/ogc/wms_server.html). capabilities.xml file contains GetCapabilities response of collective WMS service. When a user sends GetCapabilities request the default MapServer response is replaced by the one in capabilities.xml file. It is important to point out that it is not required to replace default GetCapabilities response. However, modified GetCapabilities response is shorter, simplified and more clear and thus more readable for a user.
 ```
 cd /srv
 mkdir cp
@@ -93,7 +93,7 @@ touch error.txt
 chmod 666 error.txt
 ```
 
-Place wmssampleintegration and wms_info.php files in folder /usr/lib/cgi-bin/ and give them required privileges. File wmssampleintegration redirects incoming user request. There are three redirections in the sample implementation:
+Place [wmssampleintegration](gp-single-access-point/resources/software/wmssampleintegration) and [wms_info.php](gp-single-access-point/resources/software/wms_info.php) files in folder ```/usr/lib/cgi-bin/``` and give them required privileges. File wmssampleintegration redirects incoming user request. There are three redirections in the sample implementation:
 -	GetCapabilities request is redirected to srv/cp/capabilities.xml,
 -	request without parameters is redirected to wms_info.php file,
 -	request with parameters other than GetCapabilities is redirected to MapServer.
