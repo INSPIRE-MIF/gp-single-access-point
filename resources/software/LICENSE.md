@@ -7,6 +7,6 @@ Following changes/optimisations have been made in the code:
 - Modified definition of spatial extend of the local WMS service.
 - Optimised redirection mechanism. 
 - Cookies support. 
--Grouping of layers.
+- Grouping of layers.
 
 Other minor modifications are focused on improving the efficiency of some MapServer functionalities related to services’ integration, e.g. turning off of not used modules.
