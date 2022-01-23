@@ -1,5 +1,5 @@
-LICENSE
- 
+## LICENSE
+
 This modified version of MapServer has been built on top of version 7.0.7. License of the MapServer can be found [here](https://mapserver.org/copyright.html).  
 All modification made in code are licensed under [Creative Commons Attribution-ShareAlike 3.0 licence (CC BY-SA)](https://creativecommons.org/licenses/by-sa/3.0/).
 
