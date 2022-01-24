@@ -124,6 +124,6 @@ http://<server_url>//cgi-bin/wmssampleintegration?SERVICE=WMS&VERSION=1.3.0&REQU
 ```
 should return the sample map showing cadastral parcels (Figure 2).
 
-![Sample GetMap response](https://raw.githubusercontent.com/marty1357/gp-single-access-point/main/resources/images/sampleMap.png "Sample GetMap response")
+![Sample GetMap response](resources/images/sampleMap.png "Sample GetMap response")
 
 _Figure 2 Sample GetMap response_
