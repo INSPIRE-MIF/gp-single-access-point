@@ -81,6 +81,8 @@ Download config files and place them in appropriate locations on your server. Al
 
 ![Configuration files dependencies](https://raw.githubusercontent.com/marty1357/gp-single-access-point/main/resources/images/redirectionSchema.png "Configuration files dependencies")
 
+_Figure 1 Configuration files dependencies_
+
 [cp.map](resources/software/cp.map) and [capabilities.xml](resources/software/capabilities.xml) files can be placed in a location of your choice, e.g. ```/srv/cp/```. However, if you change the location of the files, you may have to change relevant Apache configuration files. cp.map file contains service configuration including URL of local services. More information about WMS service configuration in MapServer is available in [MapServer documentation](https://mapserver.org/ogc/wms_server.html). capabilities.xml file contains GetCapabilities response of collective WMS service. When a user sends GetCapabilities request the default MapServer response is replaced by the one in capabilities.xml file. It is important to point out that it is not required to replace default GetCapabilities response. However, modified GetCapabilities response is shorter, simplified and more clear and thus more readable for a user.
 ```
 cd /srv
@@ -123,3 +125,5 @@ http://<server_url>//cgi-bin/wmssampleintegration?SERVICE=WMS&VERSION=1.3.0&REQU
 should return the sample map showing cadastral parcels (Figure 2).
 
 ![Sample GetMap response](https://raw.githubusercontent.com/marty1357/gp-single-access-point/main/resources/images/sampleMap.png "Sample GetMap response")
+
+_Figure 2 Sample GetMap response_
