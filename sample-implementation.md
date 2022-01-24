@@ -79,7 +79,7 @@ This chapter describes step by step how to set up a copy of the sample service i
 
 Download config files and place them in appropriate locations on your server. Altogether you have to download four configuration files and create one for MapServer logs. Roles and dependencies between configuration files are shown in Figure 1.
 
-![Configuration files dependencies](resources/images/redirectionSchema1.png "Configuration files dependencies")
+![Configuration files dependencies](resources/images/redirectionSchema2.png "Configuration files dependencies")
 
 _Figure 1 Configuration files dependencies_
 
