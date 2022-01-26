@@ -4,7 +4,7 @@ This modified version of MapServer has been built on top of version 7.0.7. Lice
 All modification made in code are licensed under [Creative Commons Attribution-ShareAlike 3.0 licence (CC BY-SA)](https://creativecommons.org/licenses/by-sa/3.0/).
 
 Following changes/optimisations have been made in the code:
-- Modified definition of spatial extend of the local WMS service.
+- Modified definition of spatial extent of the local WMS service.
 - Optimised redirection mechanism. 
 - Cookies support. 
 - Grouping of layers.
