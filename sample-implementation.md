@@ -95,7 +95,7 @@ cd cp
 wget https://raw.githubusercontent.com/marcingrudzien/gp-single-access-point/main/resources/software/cp.map
 wget https://raw.githubusercontent.com/marcingrudzien/gp-single-access-point/main/resources/software/capabilities.xml
 ```
-Create error.txt file for MapServer logs
+Create error.txt file for MapServer logs, and give it the necessary privileges.
 ```
 touch error.txt
 chmod 666 error.txt
