@@ -69,7 +69,9 @@ INPUT=POSTGIS INPUT=OGR INPUT=GDAL INPUT=SHAPEFILE
 
 ### Building application (optional)
 If you want to compile MapServer code, you may optionally install appropriate libraries.
+```
 apt install build-essential protobuf-c-compiler protobuf-compiler libprotobuf-c-dev
+```
 More about compiling MapServer you can find in [the documentation](https://www.mapserver.org/installation/unix.html).
 In order to enable key wms client feature, you will need to pass the WITH_CLIENT_WMS option to the configure script e.g.:
 ```
