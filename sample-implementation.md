@@ -55,7 +55,7 @@ Make sure the mapserv file has executable permissions.
 cd /usr/lib/cgi-bin/
 chmod 755 mapserv
 ```
-Check whetehr mapserver works.
+Check whether mapserver works.
 ```
 ./mapserv -v
 ```
