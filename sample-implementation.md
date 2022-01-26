@@ -11,7 +11,9 @@ This modified version of MapServer has been built on version 7.0.7. Following ch
 2.	Redirection mechanism. If a request covers the spatial extend of only one local service, the collective service does not forward the request to the local service. Still, it returns to the client application proper URI pointing directly to a local service. This is done by utilising properties of Hypertext Transfer Protocol (HTTP). Collective service sends a response URL to the local service with the 302 status code. To achieve this additional parameter gs_sendUrl has been introduced.
 3.	Cookies support. Some local servers may require sending additional information stored in cookies. Modified MapServer allows adding cookies to requests. Cookies are stored in a separate file but generated independently from the MapServer app.
 4.	Grouping of layers. Request to different layers of the same WMS local service is aggregated. Instead of many requests, one separately for each layer, one request to a WMS local service is sent.
+
 Other minor modifications are focused on improving the efficiency of some MapServer functionalities related to services’ integration, e.g. turning off of not used modules.
+
 Modified MapServer Map files containing services’ configuration cannot be used on the standard version of MapServer. However, standard MapServer configuration files work in the modified version.
 
 ## Installation
