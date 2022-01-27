@@ -33,7 +33,7 @@ Check whether the Apache server is working by entering its IP address in the web
 ### MapServer installation
 Download the file mapserver-7.0.7.zip from GitHub and copy it to location /usr/src/.
 ```
-wget https://raw.githubusercontent.com/marcingrudzien/gp-single-access-point/main/resources/software/
+wget https://raw.githubusercontent.com/marcingrudzien/gp-single-access-point/main/resources/software/mapserver-7.0.7.zip
 cp mapserver-7.0.7.zip /usr/src/
 ```
 Unzip the file.
