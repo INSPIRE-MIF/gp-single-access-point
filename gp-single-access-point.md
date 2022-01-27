@@ -109,7 +109,7 @@ _Figure 1 Concept of the collective service._
 
 </p> -->
 
-It is important to mention that while proxy service gives users access to data covering a bigger area, a user can still connect directly to a local service.
+** It is important to mention that while proxy service gives users access to data covering a bigger area, a user can still connect directly to a local service. **
 
 INSPIRE discovery services natively utilize the concept of service integration. Catalogue Service for Web (CS-W) standard supports Harvest operation that as its name suggest can harvest metadata records from local catalogue servers to a parent catalogue. Therefore, a user of parent (e.g. national) metadata catalogue has access to the metadata provided by child catalogues (e.g. regional or local). Similarly, users via EU INSPIRE metadata catalogue have access to the content of national catalogues.
 
