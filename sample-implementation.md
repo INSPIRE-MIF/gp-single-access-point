@@ -115,7 +115,7 @@ wget https://raw.githubusercontent.com/marcingrudzien/gp-single-access-point/mai
 chmod 755 wmssampleintegration
 chmod 755 wms_info.php
 ```
-Current service endpoint is set to locahost. If needed change it in configuration files to a correct URL of the service. Use the text editor of your choice, e.g. nano.
+Current service endpoint in configuration files is set to locahost. If needed change it in configuration files to a correct URL of the service. Use the text editor of your choice, e.g. nano.
 ```
 nano /srv/cp/cp.map
 ```
