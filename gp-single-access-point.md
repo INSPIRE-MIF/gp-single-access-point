@@ -96,7 +96,7 @@ The responsibility for maintenance of spatial data sets differs across European 
 
 Maintaining similar spatial data sets on a regional or local level leads to a dispersion of data sets and hinders users’ access to the spatial data. A user who wants to access and use the data published by many local or regional organisations has to put some additional effort first to find and later integrate data from many data sources. And if there are hundreds of such data sources, it may require many hours of additional work or investing extra resources on integration services provided by specialised third parties.
 
-To avoid that a proxy service can be created, integrating services maintained on local, regional or even national levels. Such proxy service from a user perspective offers one seamless data set for the bigger area. Figure 1 shows the concept of collective service. 
+To avoid that a proxy service can be created, integrating services maintained on local levels. Such proxy service from a user perspective offers one seamless data set for the bigger area. Figure 1 shows the concept of collective service. 
 
 
 ![Concept of the collective service](https://raw.githubusercontent.com/marty1357/gp-single-access-point/main/resources/images/collectiveserviceconcept.png "Concept of the collective service")
@@ -116,6 +116,8 @@ INSPIRE discovery services natively utilize the concept of service integration. 
 However, such an approach is not natively supported in case of INSPIRE view and download services. Therefore, some additional technical solutions have to be implemented to facilitate access to local data.
 
 This document provides guidelines on developing such collective service for view services utilising Web Map Service (WMS) standard.
+
+**It is essential to point out that professor Waldemar Izdebski is the originator and primary author of collective services for Poland.**
 
 # Utilised standards <a name="standards"></a> 
 
@@ -149,7 +151,7 @@ _Figure 2 GetCapabilities sequence diagram_
 
 The main difference between a standard WMS service and collective service is backend behaviour of GetMap operation.
 
-As shown in Figure 3, collective service after receiving initial GetMap request from a client application in the first step checks which local services provide data sets for the area defined in a bounding box of the request. To do this, the collective service uses the databases containing polygon geometry with spatial extends of each connected local service. Then the request is forwarded only to local services that meet selection criteria. The local services send GetMap responses with map pictures covering their respective areas. These responses are captured by collective service and merged creating one map picture. Finally, this flattened picture is returned to the client application as a GetMap response.
+As shown in Figure 3, collective service after receiving initial GetMap request from a client application in the first step checks which local services provide data sets for the area defined in a bounding box of the request. To do this, the collective service uses the databases containing polygon geometry with spatial extents of each connected local service. Then the request is forwarded only to local services that meet selection criteria. The local services send GetMap responses with map pictures covering their respective areas. These responses are captured by collective service and merged creating one map picture. Finally, this flattened picture is returned to the client application as a GetMap response.
 
 ![GetMap sequence diagram - basic scenario](https://raw.githubusercontent.com/marty1357/gp-single-access-point/main/resources/images/GetMapManyLocalServices.png "GetMap sequence diagram - basic scenario")
 
@@ -221,6 +223,8 @@ To homogenise portrayal and content of collective network service standardisatio
 ## Technical solution <a name="technicalSolutions"></a> 
 
 The backbone of the Polish solution is [MapServer](https://mapserver.org/). MapServer is an Open Source software that can act as a WMS Server as well as a WMS Client. The MapServer allows for use of data from different servers, and enables the creation of a network of WMS services from which clients can build customized maps. Detailed documentation containing information about using MapServer’s WMS connection type to include layers from remote WMS servers can be found on [MapServer website](https://www.mapserver.org/ogc/wms_client.html).
+
+Guidelines of setting up a simple integration service can be found in the [Description of a testbed implementation of collective WMS service](sample-implementaion.md) document.
 
 # Final words <a name="finalWords"></a> 
 
