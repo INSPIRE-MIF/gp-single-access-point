@@ -19,7 +19,7 @@ Modified MapServer Map files containing services’ configuration cannot be used
 ## Installation
 The installation and configuration described in this document have been tested on Debian 9. Installation and configuration on other operating systems may require changes related to versions of installed libraries and further alteration of MapServer code.
 The document assumes that the user with **root privileges** carries the installation process using the terminal. 
-The sample implementation of the collective service set up using this document is available at [the endpoint](http://185.238.72.102/cgi-bin/wmssampleintegration?&REQUEST=GetCapabilities&SERVICE=WMS).
+The sample implementation of the collective service set up using this document is available at [the endpoint](https://mapy.geoportal.gov.pl/wss/testbed/wmsintegration/mapserver?&REQUEST=GetCapabilities&SERVICE=WMS).
 
 ### Apache installation
 ```
